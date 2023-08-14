@@ -41,4 +41,3 @@ export const VagaEstilo = styled.li`
     color: ${(props) => props.theme.corPrincipal};
   }
 `
-
