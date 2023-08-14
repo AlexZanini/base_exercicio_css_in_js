@@ -18,11 +18,6 @@ export const Link = styled.a`
   border-radius: 8px;
   text-align: center;
 
-  &:hover {
-    background-color: ${(props) => props.theme.corPrincipal};
-    color: ${(props) => props.theme.corSecundaria};
-  }
-
   @media (max-width: 768px) {
     display: block;
   }
@@ -36,9 +31,14 @@ export const VagaEstilo = styled.li`
   transition: all ease 0.3s;
   border-radius: 8px;
 
-  ${Link}:hover {
+  :hover {
     border-color: ${(props) => props.theme.corPrincipal};
+    background-color: ${(props) => props.theme.corPrincipal};
+    color: ${(props) => props.theme.corSecundaria};
+  }
+  :hover a {
     background-color: ${(props) => props.theme.corSecundaria};
     color: ${(props) => props.theme.corPrincipal};
   }
 `
+
